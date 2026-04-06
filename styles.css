@@ -46,6 +46,13 @@ nav a:hover {
     color: #666;
 }
 
+.instagram-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
 /* Main */
 main {
     padding: 40px;
@@ -60,6 +67,44 @@ section h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-align: center;
+}
+
+/* Sobre Mi */
+#sobre-mi h3,
+#sobre-mi h3 + p {
+    text-align: center;
+}
+
+#sobre-mi h3 {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+#sobre-mi h3:first-of-type {
+    margin-top: 0;
+}
+
+#sobre-mi h3 + p {
+    margin-bottom: 22px;
+}
+
+/* Contacto */
+#contacto {
+    text-align: center;
+}
+
+#contacto .contacto-foto {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 0 auto 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#contacto p {
+    margin-bottom: 8px;
 }
 
 /* Galería */
