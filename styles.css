@@ -32,9 +32,10 @@ body {
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 20px 40px;
+    text-align: center;
+    padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -48,7 +49,10 @@ header h1 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    margin-top: 10px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
@@ -89,7 +93,7 @@ nav a:focus-visible .instagram-icon {
 
 /* Main */
 main {
-    padding: 40px;
+    padding: 20px;
 }
 
 /* Secciones */
@@ -150,7 +154,7 @@ p {
 /* Galería */
 .galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -191,24 +195,27 @@ footer {
     font-weight: 100;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Desktop y tablet grande */
+@media (min-width: 769px) {
     header {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 20px 40px;
     }
 
     nav ul {
-        margin-top: 10px;
-        gap: 15px;
+        margin-top: 0;
+        gap: 20px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
     }
 
     main {
-        padding: 20px;
+        padding: 40px;
     }
 
     .galeria {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
